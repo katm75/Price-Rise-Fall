@@ -23,4 +23,3 @@
     # price_change = the increase or decrease of the stock
     # total_value = the new value of the stock
 
-# just a test to see if i can get this to github
