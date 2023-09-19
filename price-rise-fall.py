@@ -37,6 +37,7 @@ print ("Your stock changed by ", price_change)
 
 # calculation code goes here
 
-total_value = price + 
+total_value = price + price * price_change
+    #this works, but price_change is as a percent and it needs to be changed to a decimal.  This needs a new variable and calulation.
 
 print ("The new value of your stock is", total_value)
