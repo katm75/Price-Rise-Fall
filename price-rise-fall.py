@@ -23,4 +23,18 @@
     # price_change = the increase or decrease of the stock
     # total_value = the new value of the stock
 
-# test
+from functools import total_ordering
+
+
+print ("This is a program to calculate the change in price of your stock")
+print ("")
+
+price = int(input("Please type in the purchase price of your stock: ")) 
+print ("You bought stock for : ", price)
+
+price_change = int(input("Please type the percentage change of your stock:"))
+print ("Your stock changed by ", price_change)
+
+# calculation code goes here
+
+print ("The new value of your stock is", total_value)
