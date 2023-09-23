@@ -4,7 +4,7 @@
 # Kathryn Marks
 # kathryn.pythonprograms@gmail.com
 # Created September 18, 2023
-# Last modified September 18, 2023
+# Last modified September 22, 2023
 
 # #You've bought some stock and now the price is on the rise
 
@@ -22,22 +22,29 @@
     # price = the current price of the stock
     # price_change = the increase or decrease of the stock
     # total_value = the new value of the stock
-
-from functools import total_ordering
+    # percent_change = the percentage change in decimal form
 
 
 print ("This is a program to calculate the change in price of your stock")
 print ("")
 
-price = float(input("Please type in the purchase price of your stock: ")) 
+price = float(input("Please type in the purchase price of your stock in dollars: ")) 
 print ("You bought stock for : ", price)
 
 price_change = float(input("Please type the percentage change of your stock:"))
 print ("Your stock changed by ", price_change)
 
-# calculation code goes here
+# change the percent to a decimal for caluclation
 
-total_value = price + price * price_change
-    #this works, but price_change is as a percent and it needs to be changed to a decimal.  This needs a new variable and calulation.
+percent_change = price_change/100
 
-print ("The new value of your stock is", total_value)
+# there is something wrong because when you run the program with 1% change, it outputs 200
+
+# total_value = price + price * price_change
+    #this works, but price_change is as a percent and it needs to be changed to a decimal.  
+    #This needs a new variable and calulation.
+
+total_value = price + price * percent_change
+
+print ("")
+print ("The new value of your stock is ", total_value)
