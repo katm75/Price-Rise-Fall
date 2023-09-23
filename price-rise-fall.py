@@ -29,10 +29,12 @@ print ("This is a program to calculate the change in price of your stock")
 print ("")
 
 price = float(input("Please type in the purchase price of your stock in dollars: ")) 
-print ("You bought stock for : ", price)
+print ("You bought stock for : ", + str.format(price) + "dollars")
+    # this doesn't work.  i don't know why.  
+    # so i guess i'll format it in its own line and then do the print
 
 price_change = float(input("Please type the percentage change of your stock:"))
-print ("Your stock changed by ", price_change)
+print ("Your stock changed by ", + price_change + "percent")
 
 # change the percent to a decimal for caluclation
 
@@ -47,4 +49,4 @@ percent_change = price_change/100
 total_value = price + price * percent_change
 
 print ("")
-print ("The new value of your stock is ", total_value)
+print ("The new value of your stock is ", + total_value + "dollars")
